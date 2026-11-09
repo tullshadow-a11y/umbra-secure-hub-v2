@@ -1,4 +1,4 @@
-Name: Deploy to GitHub Pages (from zip)
+name: Deploy to GitHub Pages (from zip)
 
 on:
   push:
@@ -24,7 +24,7 @@ jobs:
         with:
           node-version: 22
 
-      -       - name: Unpack project
+      - name: Unpack project
         run: unzip -q Umbra-Source-Code.zip
 
       - name: Install and build
